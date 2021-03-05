@@ -17,9 +17,13 @@
 </head>
 
 <body>
-    <div class="box"></div>
+    <div class="box" id="target"></div>
     <script>
+        'use scrict';
 
+        document.getElementById('target').addEventListener('click', () => {
+            document.getElementById('target').style.background = 'pink';
+        });
     </script>
 </body>
 
