@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js_learn</title>
     <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .box {
             width: 100px;
             height: 100px;
             background-color: skyblue;
             cursor: pointer;
             transition: 0.8s;
+            margin: 0 10px 10px 0;
         }
 
         .circle {
@@ -24,12 +30,24 @@
 </head>
 
 <body>
-    <div class="box" id="target"></div>
+    <div class="box" id="target1"></div>
+    <div class="box" id="target2"></div>
+    <div class="box" id="target3"></div>
+
     <script>
         'use scrict';
-        const target = document.getElementById('target');
-        target.addEventListener('click', () => {
-            target.classList.toggle('circle');
+        const target1 = document.getElementById('target1');
+        const target2 = document.getElementById('target2');
+        const target3 = document.getElementById('target3');
+
+        target1.addEventListener('click', () => {
+            target1.classList.toggle('circle');
+        });
+        target2.addEventListener('click', () => {
+            target2.classList.toggle('circle');
+        });
+        target3.addEventListener('click', () => {
+            target3.classList.toggle('circle');
         });
     </script>
 </body>
